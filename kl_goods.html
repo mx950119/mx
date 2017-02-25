@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/goods.css" />
+		<script type = "text/javascript" src = "js/jquery-1.7.2.min.js" ></script> 
+		<script type = "text/javascript" >
+		$(function() {
+		$('.small').mousemove(function(e) {
+			$('b').show();
+			$('.big').show();
+			var L = e.pageX;
+			var l = $(this).offset().left;
+			var left = L - l - 200;
+
+			var T = e.pageY;
+			var t = $(this).offset().top;
+			var top = T - t - 200;
+
+			left = left < 0 ? 0 : left;
+			left = left > 400 ? 400 : left;
+			top = top < 0 ? 0 : top;
+			top = top > 400 ? 400 : top;
+
+			$('b').css({
+				left: left,
+				top: top
+			});
+
+			var imgLeft = -left * 2;
+			var imgTop = -top * 2;
+			imgLeft = imgLeft < -400 ? -400 : imgLeft;
+			imgTop = imgTop < -400 ? -400 : imgTop;
+
+			$('.big img').css({
+				left: imgLeft,
+				top: imgTop
+			});
+		});
+
+		$('.small').mouseout(function() {
+			$('.small b').hide();
+			$('.big').hide();
+		});
+	})
+		</script>
+	</head>
+	<body>
+		<div id="header">
+				<img src="img/kaola/kl_index (31).jpg" />
+			</div>
+			<div id="header_nav">
+				<ul class="n_left">
+					<li>考拉欢迎你！
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">注册</a>
+					</li>
+					<li>
+						<a href="#">手机考拉海购</a>
+					</li>
+				</ul>
+				<ul class="n_right">
+					<li>
+						<a href="#">每日签到</a>
+					</li>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li>
+						<a href="#">个人中心</a>
+					</li>
+					<li>
+						<a href="#">客户服务</a>
+					</li>
+					<li>
+						<a href="#">充值中心</a>
+					</li>
+					<li>
+						<a href="#">消费者报告书</a>
+					</li>
+					<li>
+						<a href="#">更多</a>
+					</li>
+				</ul>
+			</div>
+		<div id="header_nav2">
+				<div class="n2_left">
+					<img src="img/kaola/kl_index(6).gif" />
+				</div>
+				<div class="n2_center">
+					<input type="text" />
+					<button><img src="img/kaola/kl_index(7).gif"></button>
+					<ul>
+						<li>
+							<a herf="#">游戏充值</a>
+						</li>
+						<li>
+							<a herf="#">麦片</a>
+						</li>
+						<li>
+							<a herf="#">马油</a>
+						</li>
+						<li>
+							<a herf="#">lamy</a>
+						</li>
+						<li>
+							<a herf="#">卫生巾</a>
+						</li>
+						<li>
+							<a herf="#">德运奶粉</a>
+						</li>
+					</ul>
+				</div>
+				<div class="n2_right">
+					<img src="img/kaola/kl_index(8).gif" />
+					<span>购物车</span>
+				</div>
+		</div>
+		<div id="nav">
+		<div class="nav_ul">
+					<ul>
+						<li>所有分类</li>
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">今日限购</a>
+						</li>
+						<li>
+							<a href="#">每日上心</a>
+						</li>
+						<li>
+							<a href="#">国家馆</a>
+						</li>
+						<li>
+							<a href="#">全球旗舰</a>
+						</li>
+					</ul>
+				</div>		
+		</div>
+		<div id = "title">
+			<a href="#">网易考拉海购</a> >  Baci 芭喜 心形装榛仁巧克力礼盒 386克/盒
+		</div>
+		<div id="box">
+			<div class="small">
+				<img src="img/kaola_goods/index.jpg" alt="" /><b></b>
+			</div>
+			<div class="big">
+				<img src="img/kaola_goods/big.jpg" alt="" />
+			</div>
+		</div>
+		<div id="information">
+			<div class="s_title">
+				<img src="img/kaola_goods/img1.png" />意大利   |  Baci 芭喜
+			</div>
+			<div class="s_title2">
+				<h3>Baci 芭喜 心形装榛仁巧克力礼盒 386克/盒</h3>
+				纸因爱情，予你一生！13颗白巧克力，14颗黑巧克力！
+			</div>
+			<div class="price">
+				<table>
+				<tr>
+					<td>售价</td>
+					<td><h2>￥198.00 </h2> <span>4折</span><span>包邮</span><h4>参考价 ￥498.00</h4></td>
+				</tr>
+				<tr>
+					<td>活动</td>
+					<td><b>直降</b><i style="position: relative;left: 60px;top: -10px;">考拉特惠</i></td>
+				</tr>
+				<tr>
+					<td>税费</td>
+					<td><i>【本商品包税】</i>无需额外交税</td>
+				</tr>
+				<tr>
+					<td>运费</td>
+					<td>南京  至 <input type="text" />免运费</td>
+				</tr>
+				<tr>
+					<td>服务</td>
+					<td>本商品由 商家南京6号仓 发货</td>
+				</tr>
+				<tr>
+					<td>数量</td>
+					<td><button>-</button>1<button>+</button></td>
+				</tr>
+				</table>
+			</div>
+			<div class="btn">
+				<span>立即购买</span>
+				<span>加入购物车</span>
+			</div>
+			<div class="s_title3">
+				不支持7天无理由退货<br />
+				<h5>40人评价&nbsp;9人晒单</h5>
+			</div>
+		</div>
+		<div id="play2">
+			<button>《</button>
+			<ul>
+				<li><a href="#"><img src="img/kaola_goods/img (2).jpg"</a></li>
+				<li><a href="#"><img src="img/kaola_goods/img (5).jpg"</a></li>
+				<li><a href="#"><img src="img/kaola_goods/img (7).jpg"</a></li>
+				<li><a href="#"><img src="img/kaola_goods/img2.jpg"</a></li>
+			</ul>
+			<button> 》 </button>
+		</div>
+		<div id="i_t">
+			<div class="i_t1">
+				<h5>相关推荐</h5>购买了该商品的人还购买了
+			</div>
+			<div class="recommend">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div id="detail">
+			<div class="detail_l">
+				<span>看了又看</span>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="detail_r">
+				
+			</div>
+		</div>
+		
+		<div id = "footer">
+			<div class = "f_nav1">
+				<img src = "img/kaola/kl_index(10).gif" />
+			</div>
+			<div class = "f_nav_i">
+				<img src="img/kaola/kl_index(6).gif" />
+				<span>关注我们</span>
+				<img src="img/kaola/kl_index(11).gif" />
+			</div>
+				<div class="f_nav2">
+					<ul>
+						<li>
+							<dt>
+								<h3>考拉保障</h3>
+								<dd>考拉保障</dd>
+								<dd>考拉保障</dd>
+							</dt>
+						</li>
+						<li>
+							<dt>
+								<h3>新手指南</h3>
+								<dd>购物流程</dd>
+								<dd>支付方式</dd>
+								<dd>通关税费</dd>
+								<dd>常见问题</dd>
+							</dt>
+						</li>
+						<li>
+							<dt>
+								<h3>售后服务</h3>
+								<dd>退货政策</dd>
+								<dd>支付方式</dd>
+								<dd>通关税费</dd>
+								<dd>常见问题</dd>
+							</dt>
+						</li>
+						<li>
+							<dt>
+								<h3>物流配送</h3>
+								<dd>配送方式</dd>
+								<dd>配送服务</dd>
+								<dd>运费标准</dd>
+								<dd>物流跟踪</dd>
+							</dt>
+						</li>
+						<li>
+							<dt>
+								<h3>关于我们</h3>
+								<dd>联系我们</dd>
+								<dd>招商合作</dd>
+								<dd>销售联盟</dd>
+								<dd>CEO邮箱</dd>
+							</dt>
+						</li>
+						<li>
+							<img src="img/kaola/kl_index (1).jpg">
+							<h5>扫描下载手机版</h5>
+						</li>
+					</ul>
+				</div>
+				<div class="f_nav3">
+					<p>About NetEase - 公司简介 - 联系方法 - 友情链接 - 招聘信息 - 客户服务 - 隐私政策 - 网络营销 - 网站地图 - 网易考拉海购
+						<br /> 网络文化经营许可证：浙网文[2016]0155-055号 增值电信业务经营许可证：浙B2-20090185-3 出版物经营许可证：新出发浙杭经零字第00136号 <br /> 
+						浙公网安备 33010002000066号 网易公司版权所有©1997-2017 <br /> 
+						可信网站工商营业执照网上标识
+					</p>
+				</div>
+		</div>
+	</body>
+</html>
